@@ -40,13 +40,13 @@ h1{
     max-width: 100%;
     object-fit: cover;
     display: flex;
-    transform: translate(60%, 20%);
+    transform: translate(20%, 20%);
 }
 #BotonEnd{
     font-Family: Arial, sans-serif;
     color: white;
     background-color: black;
-    transform: translate(3323%, 290%);
+    transform: translate(70%, 290%);
     width: 32px;
     height: 32px;
     cursor: pointer;
