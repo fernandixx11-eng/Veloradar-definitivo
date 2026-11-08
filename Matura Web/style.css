@@ -37,7 +37,7 @@ h1{
 }
 #video{
     width: 400px;
-    max-width: 100%;
+    max-width: 90%;
     object-fit: cover;
     display: flex;
     transform: translate(10%, 20%);
