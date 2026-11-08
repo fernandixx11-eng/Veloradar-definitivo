@@ -81,7 +81,7 @@ golito.addEventListener("click", async () => {
 
       let balonanterior = null;
       let balonesenmov = []
-      let umbral = 10
+      let umbral = 3
       for(let i = 0; i < datosdelbalon.length; i++){
         if (datosdelbalon[i] !== null){
           let balonenanalisis = datosdelbalon[i].x + datosdelbalon[i].ancho/2
