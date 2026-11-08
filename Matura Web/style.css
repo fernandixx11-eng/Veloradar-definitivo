@@ -1,0 +1,55 @@
+body{
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+}
+h1{
+    color: blue;
+    text-align: center;
+    font-family: sans-serif;
+}
+#BotonStart {
+    color: white;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-Family: Arial, sans-serif;
+}
+#video{
+    width: 600px;
+    object-fit: cover;
+    display: flex;
+    transform: translate(77%, 20%);
+}
+#BotonEnd{
+    font-Family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    transform: translate(3323%, 290%);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+#Gol{
+    color: white;
+    position: absolute;
+    background-color: blue;
+    cursor: pointer;
+    border: none;
+    top: 65%;
+    left: 47%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+#canvas{
+    display: none;
+}

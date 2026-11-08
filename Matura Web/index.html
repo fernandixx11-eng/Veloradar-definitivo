@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar Automático para Fútbol</title>
+    <link rel="stylesheet" href="style.css">
+</script>
+</head>
+<body>
+    <script src= "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+    <script src= "https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.3/dist/coco-ssd.min.js"></script>
+    <script src= "detector.js"></script>
+    <h1>Veloradar Automático</h1>
+    <button id="BotonStart">Comienza a grabar</button>
+    <button id="BotonEnd">X</button>
+    <button id="Gol">GOL</button>
+    <video id="video" autoplay playsinline></video> 
+    <canvas id="canvas" ></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
