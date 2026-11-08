@@ -24,8 +24,20 @@ h1{
     cursor: pointer;
     font-Family: Arial, sans-serif;
 }
+#Gol{
+    color: white;
+    position: absolute;
+    background-color: blue;
+    cursor: pointer;
+    border: none;
+    top: 65%;
+    left: 47%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
 #video{
     width: 600px;
+    max-width: 100%;
     object-fit: cover;
     display: flex;
     transform: translate(77%, 20%);
@@ -38,17 +50,6 @@ h1{
     width: 32px;
     height: 32px;
     cursor: pointer;
-}
-#Gol{
-    color: white;
-    position: absolute;
-    background-color: blue;
-    cursor: pointer;
-    border: none;
-    top: 65%;
-    left: 47%;
-    font-size: 1.5rem;
-    border-radius: 10px;
 }
 #canvas{
     display: none;
