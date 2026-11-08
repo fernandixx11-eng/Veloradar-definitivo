@@ -14,6 +14,7 @@ let deteccion = null;
 const cargar = async () => {
   deteccion = await cocoSsd.load({base: "mobilenet_v2"});
   console.log("Ya esta cargado");
+  alert("Ya esta cargado");
 };
 cargar();
 
@@ -65,6 +66,7 @@ botonfinal.addEventListener("click", async () => {
 
 golito.addEventListener("click", async () => {
   try{
+    alert("Empieza")
     golito.disabled = true
     const copiadelbuffer = buffer.slice()
     let datosdelbalon = [];
@@ -139,6 +141,7 @@ golito.addEventListener("click", async () => {
     golito.disabled = false
   } catch (err) {
     console.error("No hay acceso al video", err);
+    alert("algo anda mal")
     golito.disabled = false
   };
 });
