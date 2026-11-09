@@ -135,7 +135,7 @@ golito.addEventListener("click", async () => {
             return velocidad;
           };
           const velocidad = mediciondevelocidad(distanciatotal,tiempo)
-          if (velocidad > 4) {
+          if (velocidad > 1) {
           const velocidadkxh = velocidad * 3.6
           alert("El tiro va a:"+ velocidadkxh.toFixed(1) +" km/h");
           } else {
