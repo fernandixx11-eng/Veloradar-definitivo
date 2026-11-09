@@ -14,7 +14,7 @@ let deteccion = null;
 const cargar = async () => {
   deteccion = await cocoSsd.load({base: "mobilenet_v2"});
   console.log("Ya esta cargado");
-  alert("Ya esta cargado");
+  alert("Dale al botón rojo y graba la portería. Cuando sea gol pulsa el botón azul. Cuando termines pulsa la cruz negra");
 };
 cargar();
 
