@@ -29,13 +29,13 @@ h1{
     max-width: 99%;
     object-fit: cover;
     display: flex;
-    transform: translate(5%, 5%);
+    transform: translate(5%, 8%);
 }
 #BotonEnd{
     font-Family: Arial, sans-serif;
     color: white;
     background-color: black;
-    transform: translate(70%, 250%);
+    transform: translate(70%, 245%);
     width: 32px;
     height: 32px;
     cursor: pointer;
