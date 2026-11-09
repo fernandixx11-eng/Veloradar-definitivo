@@ -29,7 +29,6 @@ h1{
     max-width: 99%;
     object-fit: cover;
     display: flex;
-    transform: translate(10%, 20%);
 }
 #BotonEnd{
     font-Family: Arial, sans-serif;
