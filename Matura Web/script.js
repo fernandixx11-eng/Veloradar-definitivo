@@ -73,7 +73,7 @@ golito.addEventListener("click", async () => {
     async function elección_del_primero_y_el_ultimo(datosdelbalon) {
       for(let i = 0; i < copiadelbuffer.length; i++) {
         const  detectando = await detectarBalon(deteccion, copiadelbuffer[i].foto, 0.1, 0.5, 1);
-        if(detectando.length > 1) {
+        if(detectando.length > 0) {
         datosdelbalon.push({time: copiadelbuffer[i].time, x: detectando[0].bbox[0], ancho: detectando[0].bbox[2], alto: detectando[0].bbox[3]});
       } else{
         datosdelbalon.push(null);
