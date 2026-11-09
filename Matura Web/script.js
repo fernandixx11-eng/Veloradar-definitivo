@@ -66,7 +66,7 @@ botonfinal.addEventListener("click", async () => {
 
 golito.addEventListener("click", async () => {
   try{
-    alert("Empieza")
+    alert("Empieza el analisis")
     golito.disabled = true
     const copiadelbuffer = buffer.slice()
     let datosdelbalon = [];
@@ -90,9 +90,9 @@ golito.addEventListener("click", async () => {
             if(diferencia > umbral){
               balonesenmov.push(datosdelbalon[i]);
             }
-            balonanterior = balonenanalisis
+            balonanterior = balonenanalisis;
           } else {
-            balonanterior = balonenanalisis
+            balonanterior = balonenanalisis;
           };
         };
       };
@@ -111,9 +111,9 @@ golito.addEventListener("click", async () => {
       function calculo_de_la_distancia(metrosxpixel) {
             const ballmed1 = balonesenmov[0].x + balonesenmov[0].ancho/2;
             const ballmed2 = balonesenmov[balonesenmov.length - 1].x + balonesenmov[balonesenmov.length - 1].ancho/2;
-            const distanciaenpixeles = ballmed1 - ballmed2
+            const distanciaenpixeles = ballmed1 - ballmed2;
             const distanciatotal = Math.abs(distanciaenpixeles) * metrosxpixel;
-            return distanciatotal
+            return distanciatotal;
           };
           const distanciatotal = calculo_de_la_distancia(metrosxpixel);
 
@@ -124,7 +124,7 @@ golito.addEventListener("click", async () => {
           const tiempo = calculo_del_tiempo();
           
           if(tiempo <= 0) {
-            alert("No hay tiempo no se puede calcular la velocidad");
+            alert("No hay tiempo, no se puede calcular la velocidad");
             buffer = [];
             golito.disabled = false;
             return;
@@ -135,7 +135,7 @@ golito.addEventListener("click", async () => {
             return velocidad;
           };
           const velocidad = mediciondevelocidad(distanciatotal,tiempo)
-          if (velocidad > 6) {
+          if (velocidad > 4) {
           const velocidadkxh = velocidad * 3.6
           alert("El tiro va a:"+ velocidadkxh.toFixed(1) +" km/h");
           } else {
