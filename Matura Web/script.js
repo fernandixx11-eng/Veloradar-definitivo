@@ -100,7 +100,7 @@ golito.addEventListener("click", async () => {
     };
     const balonesenmov = await elección_del_primero_y_el_ultimo(datosdelbalon);
 
-    if(balonesenmov.length > 0) {
+    if(balonesenmov.length >= 2) {
       let altos = 0
       for (let i = 0; i < balonesenmov.length; i++) {
         let altura = balonesenmov[i].alto;
@@ -122,10 +122,17 @@ golito.addEventListener("click", async () => {
             return tiempo
           };
           const tiempo = calculo_del_tiempo();
+          
+          if(tiempo <= 0) {
+            alert("No hay tiempo no se puede calcular la velocidad");
+            buffer = [];
+            golito.disabled = false;
+            return;
+          };
 
           function mediciondevelocidad(distanciatotal,tiempo) {
             const velocidad = distanciatotal/tiempo;
-            return velocidad
+            return velocidad;
           };
           const velocidad = mediciondevelocidad(distanciatotal,tiempo)
           if (velocidad > 6) {
@@ -135,7 +142,7 @@ golito.addEventListener("click", async () => {
             alert("Eso parece un pase, dale más fuerte");
           };
         } else {
-          alert("¡No se ha movido el balón!");
+          alert("No se han detectado suficientes muestras de balón");
         };
     buffer = []
     golito.disabled = false
