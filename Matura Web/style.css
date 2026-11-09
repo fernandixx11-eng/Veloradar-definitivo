@@ -29,6 +29,7 @@ h1{
     max-width: 99%;
     object-fit: cover;
     display: flex;
+    text-align: center;
 }
 #BotonEnd{
     font-Family: Arial, sans-serif;
